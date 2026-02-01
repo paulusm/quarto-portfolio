@@ -78,6 +78,17 @@ _site
 
 ```
 
-4. Commit and push your changes
+4. Commit changes
+```bash
+git add .
+git commit -m "Initial commit"
+
+```
+5.publish to GitHub
+
+```bash
+quarto publish gh-pages
+```
+
 
 
