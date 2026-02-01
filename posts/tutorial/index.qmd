@@ -1,0 +1,83 @@
+---
+title: "Portfolio Tutorial"
+author: "Paul Matthews"
+date: "2026-02-01"
+categories: [news, code, analysis]
+image: "image.jpg"
+---
+
+# Tutorial : Portfolio with Quarto and Jupyter
+
+In this tutorial we will create a portfolio website using Quarto and Jupyter notebooks.
+
+
+## Prerequisites
+
+1. VSCode with Quarto, Jupyter plugins installed
+
+## More Docs and Help
+
+[Quarto Blog Documentation](https://quarto.org/docs/websites/website-blog.html)
+
+## Create a new Quarto Project
+1. Command Palette (Ctrl+Shift+P) -> Quarto: Create New Project
+2. Select "New Quarto Blog"
+3. Name your project "Portfolio"
+4. Select location on your computer
+5. Open the folder in VSCode
+
+## Change the Theme
+[Available Themes](https://quarto.org/docs/output-formats/html-themes.html)
+
+In _qaurto.yml change the theme to eg "vapor"
+
+```yaml
+format:
+    html:
+        theme: vapor
+```
+
+## Add an Example Notebook
+1.Create a new post as a subfolder and get a demo notebook
+
+```bash
+cd posts
+mkdir clustering
+wget https://akmand.github.io/_sources/ml/SK6_Clustering.ipynb
+```
+
+2. Add front matter to the top of the notebook
+```yaml
+---
+
+title: "K-Means Demo"
+author: "Paul Matthews (copied from D.Akman)"
+date: "2026-02-01"
+categories: [news, code, analysis]
+toc: true
+toc-depth: 2
+
+---
+```
+
+## Publishing to GitHub Pages
+
+[See Quarto Docs here](https://quarto.org/docs/publishing/github-pages.html), we with use the GitHub Actions method.
+
+1. Create a new repository on GitHub called "portfolio"
+2. In VSCode initialize a git repository in your local folder
+```bash
+git init
+git remote add origin git@github.com:{your user}/{repo name}.git
+```
+3. Create .gitignore file and add 
+
+```.gitignore
+_site
+.quarto
+
+```
+
+4. Commit and push your changes
+
+
