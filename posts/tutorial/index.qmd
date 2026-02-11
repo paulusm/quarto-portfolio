@@ -65,7 +65,7 @@ toc-depth: 2
 
 ## Publishing to GitHub Pages
 
-[See Quarto Docs here](https://quarto.org/docs/publishing/github-pages.html), we with use the GitHub Actions method.
+[See Quarto Docs here](https://quarto.org/docs/publishing/github-pages.html), we with use the ```quarto publish``` method.
 
 1. Create a new repository on GitHub called "portfolio"
 2. In VSCode initialize a git repository in your local folder
