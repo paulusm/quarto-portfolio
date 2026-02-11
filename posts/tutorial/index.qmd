@@ -10,6 +10,7 @@ image: "image.jpg"
 
 In this tutorial we will create a portfolio website using Quarto and Jupyter notebooks.
 
+[go.uwe.ac.uk/portfolio2](https://go.uwe.ac.uk/portfolio2)
 
 ## Prerequisites
 
